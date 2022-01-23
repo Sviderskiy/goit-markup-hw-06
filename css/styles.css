@@ -264,10 +264,9 @@ img {
   height: 50px;
   left: 700px;
   top: 430px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0;
+  border: none;
   margin-left: auto;
   margin-right: auto;
   transition: background-color var(--mainpropertyofcubic-timeduration);
@@ -720,6 +719,82 @@ img {
 }
 /* КІНЕЦЬ ІКОНОК СПИСКУ СОЦІАЛЬНИХ МЕРЕЖ ФУТЕРА */
 
+/* КОНТЕЙНЕР ПІДПИСКИ ФУТЕРА */
+.subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 93px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 570px;
+  height: 86px;
+}
+/* КІНЕЦЬ КОНТЕЙНЕРУ ПІДПИСКИ ФУТЕРА */
+
+/* ЗАГОЛОВОК КОНТЕЙНЕРУ ПІДПИСКИ ФУТЕРА */
+.subscribe-container-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  margin-bottom: 20px;
+}
+/* КІНЕЦЬ ЗАГОЛОВКУ КОНТЕЙНЕРУ ПІДПИСКИ ФУТЕРА */
+
+/* ІНПУТ ФУТЕРА */
+.footer-input {
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+}
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* КІНЕЦЬ ІНПУТУ ФУТЕРА */
+
+/* КНОПКА ПІДПИСКИ ФУТЕРА */
+.footer-subscribe-btn {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  border: none;
+  transition: background-color var(--mainpropertyofcubic-timeduration);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: #188ce8;
+}
+/* КІНЕЦЬ КНОПКИ ПІДПИСКИ ФУТЕРА */
+
+/* ТЕКСТ КНОПКИ ПІДПИСКИ ФУТЕРА */
+.footer-subscribe-btn-txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  margin-right: 10px;
+}
+/* КІНЕЦЬ ТЕКСТУ КНОПКИ ПІДПИСКИ ФУТЕРА */
+
 /* КІНЕЦЬ ФУТЕРА */
 
 /* КІНЕЦЬ ПЕРШОЇ СТОРІНКИ */
@@ -966,5 +1041,196 @@ img {
   background: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: fill var(--mainpropertyofcubic-timeduration);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 /* КІНЕЦЬ ЗАКРИВАЮЧОЇ КНОПКИ МОДАЛЬНОГО ВІКНА */
+
+/* ЗАГОЛОВОК ФОРМИ */
+.order-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+/* КЫНЕЦЬ ЗАГОЛОВКУ ФОРМИ */
+
+/* ПОЛЕ ФОРМИ */
+.order-form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+/* КІНЕЦЬ ПОЛЯ ФОРМИ */
+
+/* ЛЕЙБЛ ФОРМИ */
+.order-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  transition: box-shadow var(--mainpropertyofcubic-timeduration);
+}
+/* КІНЕЦЬ ЛЕЙБЛУ ФОРМИ */
+
+/* ІНПУТ ФОРМИ */
+.order-form-input {
+  margin-top: 4px;
+  width: 100%;
+  min-height: 40px;
+  padding: 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: border var(--mainpropertyofcubic-timeduration) box-shadow
+    var(--mainpropertyofcubic-timeduration);
+}
+
+.order-form-input:focus {
+  border: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.order-form-input:focus + .order-form-icon {
+  fill: var(--accent-color);
+}
+
+/* КІНЕЦЬ ІНПУТУ ФОРМИ */
+
+/* ІКОНКИ ФОРМИ */
+.order-form-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  fill: var(--title-text-color);
+  transition: fill var(--mainpropertyofcubic-timeduration);
+}
+/* КІНЕЦЬ ІКОНОК ФОРМИ */
+
+/* ТЕКСТОВЕ ПОЛЕ ФОРМИ */
+.order-form-textarea {
+  resize: none;
+  margin-top: 4px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  min-height: 120px;
+}
+/* КІНЕЦЬ ТЕКСТОВОГО ПОЛЯ ФОРМИ */
+
+/* ПЛЕЙСХОЛДЕР */
+.order-form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+/* КІНЕЦЬ ПЛЕЙСХОЛДЕРУ */
+
+/* УМОВИ ДОГОВОРУ ФОРМИ */
+.order-form-contract-conditions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* КІНЕЦЬ УМОВИ ДОГОВОРУ ФОРМИ*/
+
+/* ТЕКСТ УМОВ ДОГОВОРУ ФОРМИ */
+.contract-conditions-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-left: 8px;
+  color: var(--primary-text-color);
+}
+/* КІНЕЦЬ ТЕКСТУ УМОВ ДОГОВОРУ */
+
+/* ПОСИЛАННЯ УМОВ ДОГОВОРУ ФОРМИ */
+.contract-conditions-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-left: 3px;
+}
+/* КІНЕЦЬ ПОСИЛАННЯ УМОВ ДОГОВРУ ФОРМИ */
+
+/* ЧЕКБОКС */
+.input-checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  background-image: url("../images/svg/Galka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-color: var(--accent-color);
+}
+/* КІНЕЦЬ ЧЕКБОКСУ */
+
+/* ІКОНКА ЧЕКБОКСУ */
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+/* КІНЕЦЬ ІКОНКИ ЧЕКБОКСУ */
+
+/* КНОПКА ФОРМИ */
+.submit-button {
+  background-color: var(--accent-color);
+  display: block;
+  width: 200px;
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  transition: background-color var(--mainpropertyofcubic-timeduration)
+    box-shadow var(--mainpropertyofcubic-timeduration);
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* КІНЕЦЬ КНОПКИ ФОРМИ */
+
+/* ТЕКСТ КНОПКИ ФОРМИ */
+.submit-button-txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+}
+/* КІНЕЦЬ ТЕКСТУ КНОПКИ ФОРМИ */

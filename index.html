@@ -22,8 +22,7 @@
   </head>
 
   <body>
-
-<!-- ХЕДЕР -->
+    <!-- ХЕДЕР -->
 
     <header class="header">
       <div class="container">
@@ -66,24 +65,24 @@
       </div>
     </header>
 
-<!-- ХЕДЕР -->
+    <!-- ХЕДЕР -->
 
-<!-- ГОЛОВНА СЕКЦІЯ -->
+    <!-- ГОЛОВНА СЕКЦІЯ -->
 
     <main>
       <section class="main-section">
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          
+
           <button data-modal-open class="button main-title-btn" type="button">
             <span class="main-title-btn-txt"> Заказать услугу</span>
           </button>
-          </div>
+        </div>
       </section>
 
-<!-- ГОЛОВНА СЕКЦІЯ -->
+      <!-- ГОЛОВНА СЕКЦІЯ -->
 
-<!-- СЕКЦІЯ ПЕРЕВАГ -->
+      <!-- СЕКЦІЯ ПЕРЕВАГ -->
 
       <section class="advantages-section">
         <div class="container">
@@ -143,9 +142,9 @@
         </div>
       </section>
 
-<!-- СЕКЦІЯ ПЕРЕВАГ -->
+      <!-- СЕКЦІЯ ПЕРЕВАГ -->
 
-<!-- СЕКЦІЯ ПОСЛУГ -->
+      <!-- СЕКЦІЯ ПОСЛУГ -->
 
       <section class="servises-section">
         <div class="container">
@@ -153,38 +152,44 @@
           <ul class="list servises-section-list">
             <li class="list servises-section-list-item">
               <div class="services-section-img-wrap">
-              <img
-                class="servises-section-content"
-                src="./images/img1.jpg"
-                alt="руки на клавиатуре"
-                width="370"
-              /><p class="servises-section-img-txt">Десктопные приложения</p></div>
+                <img
+                  class="servises-section-content"
+                  src="./images/img1.jpg"
+                  alt="руки на клавиатуре"
+                  width="370"
+                />
+                <p class="servises-section-img-txt">Десктопные приложения</p>
+              </div>
             </li>
             <li class="list servises-section-list-item">
               <div class="services-section-img-wrap">
-              <img
-                class="servises-section-content"
-                src="./images/img2.jpg"
-                alt="телефон в руке"
-                width="370"
-              /><p class="servises-section-img-txt">Мобильные приложения</p></div>
+                <img
+                  class="servises-section-content"
+                  src="./images/img2.jpg"
+                  alt="телефон в руке"
+                  width="370"
+                />
+                <p class="servises-section-img-txt">Мобильные приложения</p>
+              </div>
             </li>
             <li class="list servises-section-list-item">
               <div class="services-section-img-wrap">
-              <img
-                class="servises-section-content"
-                src="./images/img3.jpg"
-                alt="планшет в руках"
-                width="370"
-              /><p class="servises-section-img-txt">Дизайнерские решения</p></div>
+                <img
+                  class="servises-section-content"
+                  src="./images/img3.jpg"
+                  alt="планшет в руках"
+                  width="370"
+                />
+                <p class="servises-section-img-txt">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-<!-- СЕКЦІЯ ПОСЛУГ -->
+      <!-- СЕКЦІЯ ПОСЛУГ -->
 
-<!-- СЕКЦІЯ КОМАНДИ -->
+      <!-- СЕКЦІЯ КОМАНДИ -->
 
       <section class="team-section">
         <div class="container">
@@ -249,7 +254,7 @@
               />
               <div class="team-section-container">
                 <h3 class="team-section-second-title">Ольга Репина</h3>
-                <p lang="en" class="team-section-article">Frontend Developer</p>      
+                <p lang="en" class="team-section-article">Frontend Developer</p>
                 <ul class="team-section-social-list">
                   <li class="social-list-item">
                     <a class="social-link" href="#">
@@ -394,9 +399,9 @@
         </div>
       </section>
 
-<!-- СЕКЦІЯ КОМАНДИ -->
+      <!-- СЕКЦІЯ КОМАНДИ -->
 
-<!-- СЕКЦІЯ ПОСТІЙНИХ КЛІЄНТІВ -->
+      <!-- СЕКЦІЯ ПОСТІЙНИХ КЛІЄНТІВ -->
 
       <section class="permanent-client-section">
         <div class="container">
@@ -453,9 +458,9 @@
       </section>
     </main>
 
-<!-- СЕКЦІЯ ПОСТІЙНИХ КЛІЄНТІВ -->
+    <!-- СЕКЦІЯ ПОСТІЙНИХ КЛІЄНТІВ -->
 
-<!-- ФУТЕР -->
+    <!-- ФУТЕР -->
 
     <footer class="footer">
       <div class="container">
@@ -526,18 +531,106 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-container">
+          <h3 class="subscribe-container-title">Подпишитесь на рассылку</h3>
+          <label class="footer-label">
+            <input
+              type="email"
+              name="email"
+              class="footer-input"
+              placeholder="E-mail"
+          /></label>
+          <button type="submit" class="footer-subscribe-btn">
+            <span class="footer-subscribe-btn-txt">Подписаться</span
+            ><svg class="footer-subscribe-icon" width="24" height="24">
+              <use href="./images/svg/icons.svg.svg#icon-icon-send-1"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
     <!-- ФУТЕР -->
 
     <!-- БЕКДРОП -->
-    
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close type="button" class="modal-close"><svg class="icon-close" width="18" height="18">
-            <use href="./images/svg/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
-          </svg></button>
+        <form class="order-form">
+          <p class="order-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <div class="order-form-field">
+            <label class="order-form-label"
+              >Имя<input class="order-form-input" type="text" name="name" /><svg
+                class="order-form-icon"
+                width="18"
+                height="18"
+              >
+                <use
+                  href="./images/svg/icons.svg.svg#icon-person-black-18dp-1"
+                ></use></svg
+            ></label>
+          </div>
+          <div class="order-form-field">
+            <label class="order-form-label"
+              ><span class="order-form-label-txt">Телефон</span
+              ><input class="order-form-input" type="tel" name="tel" /><svg
+                class="order-form-icon"
+                width="18"
+                height="18"
+              >
+                <use
+                  href="./images/svg/icons.svg.svg#icon-phone-black-18dp-1"
+                ></use></svg
+            ></label>
+          </div>
+          <div class="order-form-field">
+            <label class="order-form-label"
+              ><span class="order-form-label-txt">Почта</span
+              ><input class="order-form-input" type="email" name="mail" /><svg
+                class="order-form-icon"
+                width="18"
+                height="18"
+              >
+                <use
+                  href="./images/svg/icons.svg.svg#icon-email-black-18dp-1"
+                ></use></svg
+            ></label>
+          </div>
+          <div class="order-form-field">
+            <label class="order-form-label"
+              ><span class="order-form-label-txt">Комментарий</span
+              ><textarea
+                class="order-form-textarea"
+                name="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="order-form-contract-conditions">
+            <input
+              type="checkbox"
+              name="contract conditions"
+              class="input-checkbox visually-hidden"
+            /><span class="checkbox-icon"></span
+            ><span class="contract-conditions-txt"
+              >Соглашаюсь с рассылкой и принимаю </span
+            ><a class="contract-conditions-link" href="#">Условия договора</a>
+          </label>
+          <button type="submit" class="submit-button">
+            <span class="submit-button-txt">Отправить</span>
+          </button>
+        </form>
+
+        <button data-modal-close type="button" class="modal-close">
+          <svg class="icon-close" width="18" height="18">
+            <use
+              href="./images/svg/symbol-defs.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
       </div>
     </div>
 
